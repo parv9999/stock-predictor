@@ -1,0 +1,6 @@
+from textblob import TextBlob
+
+tweet = "Bitcoin is booming! 🚀🚀"
+sentiment_score = TextBlob(tweet).sentiment.polarity
+
+print(f"📢 Sentiment Score: {sentiment_score}")
