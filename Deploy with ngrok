@@ -1,0 +1,4 @@
+from pyngrok import ngrok
+
+public_url = ngrok.connect(6000)
+print(f"🌍 Public API URL: {public_url}")
