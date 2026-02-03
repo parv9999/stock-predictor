@@ -1,0 +1,7 @@
+import requests
+
+API_URL = "YOUR_NGROK_URL/predict"
+data = {"price": [50000, 50200, 50500, 50750, 51000]}
+
+response = requests.post(API_URL, json=data)
+print(response.json())
