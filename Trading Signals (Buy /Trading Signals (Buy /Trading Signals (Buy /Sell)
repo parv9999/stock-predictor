@@ -1,0 +1,6 @@
+if predicted_price[0] > df["price"].iloc[-1] and sentiment_score > 0.1:
+    print("📈 BUY SIGNAL: Price expected to go up & sentiment is positive!")
+elif predicted_price[0] < df["price"].iloc[-1] and sentiment_score < -0.1:
+    print("📉 SELL SIGNAL: Price expected to go down & sentiment is negative!")
+else:
+    print("⚖️ HOLD: No strong signal yet.")
