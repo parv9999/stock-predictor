@@ -1,311 +1,249 @@
-🧪 Chemical Equipment Visualizer
+# 📈 AI-Powered Stock & Crypto Prediction System
 
-## Live Deployment
+## 🌐 Project Overview
 
-Frontend: [https://chemical-eq-visualizer-fossee-frontend.onrender.com](https://chemical-eq-visualizer-fossee-frontend.onrender.com)  
+AI-Powered Stock & Crypto Prediction System is a machine learning–based financial analytics platform designed to analyze real-time cryptocurrency and stock market data, generate predictive insights, visualize trends, and provide intelligent trading signals.
 
-Backend API: [https://chemical-equipment-visualizer-2-ezia.onrender.com](https://chemical-equipment-visualizer-2-ezia.onrender.com)
+The project integrates real-time market APIs, sentiment analysis, predictive machine learning algorithms, and web deployment technologies to simulate an intelligent financial forecasting environment.
 
-A Web + Desktop Based Data Analysis & Visualization System
+This system demonstrates practical implementation of:
 
-📌 Project Overview
+* Financial Data Analysis
+* Machine Learning Prediction Models
+* Real-Time API Integration
+* Sentiment Analysis
+* Data Visualization
+* Web Deployment & Public Access
 
-The Chemical Equipment Visualizer is a full-stack data analysis application designed to analyze chemical plant equipment data from CSV files and generate meaningful insights such as:
+---
 
-Equipment count
+# 🚀 Core Features
 
-Type distribution
+## 📊 Real-Time Market Data Fetching
 
-Average flowrate, pressure, and temperature
+* Integrated CoinMarketCap API for live cryptocurrency market data
+* Fetches:
 
-Tabular visualization
+  * Current prices
+  * Historical trends
+  * Market movement data
+* Automated data retrieval pipeline
 
-Graphical charts
+---
 
-Downloadable PDF report
+## 🤖 AI/ML Prediction Engine
 
-The project includes:
+Implemented multiple machine learning algorithms for predictive analytics:
 
-🌐 Web backend (Django REST API)
+* Linear Regression
+* Time-Series Prediction
+* Trend Forecasting Models
+* Multi-library predictive experimentation
 
-🖥️ Desktop application (PyQt5)
+Features include:
 
-📊 Data analysis using Pandas
+* Future price prediction
+* Short-term trend analysis
+* Pattern recognition
+* Signal generation
 
-📄 PDF report generation
+---
 
-This project demonstrates real-world data handling, API integration, and multi-platform visualization, making it suitable for industry and academic evaluation.
+## 📰 Sentiment Analysis Engine
 
-🏗️ System Architecture
+* Integrated TextBlob-based sentiment scoring
+* Market sentiment evaluation from textual inputs
+* Generates:
 
-CSV File
+  * Positive sentiment score
+  * Negative sentiment score
+  * Neutral trend interpretation
 
-   ↓
+Used for improving trading signal accuracy.
 
-Desktop App (PyQt5)
+---
 
-   ↓  (POST request)
+## 📈 Data Visualization
 
-Django REST API
+* Real-time price graph generation
+* Trend plotting
+* Market movement visualization
+* Prediction comparison charts
 
-   ↓
+Visualization pipeline built using Python plotting libraries.
 
-Data Processing (Pandas)
+---
 
-   ↓
+## 🌐 Flask Web Deployment
 
-JSON Summary + PDF Report
+* Backend deployed using Flask
+* Public access enabled via ngrok tunneling
+* Browser-accessible prediction dashboard
 
-🚀 Features
+Features:
 
-✅ Backend (Django REST Framework)
+* Live prediction interface
+* Public API exposure
+* Real-time interaction
 
-Upload CSV files via API
+---
 
-Validate and process equipment data
+# 🏗️ System Architecture
 
-Calculate:
+```
+Market APIs (CoinMarketCap)
+          ↓
+   Data Collection Layer
+          ↓
+ Sentiment Analysis Engine
+          ↓
+Machine Learning Prediction Models
+          ↓
+ Signal Generation & Forecasting
+          ↓
+ Flask Backend Deployment
+          ↓
+ Public Dashboard / Visualization
+```
 
-   Total equipment count
+---
 
-  Equipment type distribution
+# 📂 Project Structure
 
-   Average flowrate
-
-   Average pressure
-
-   Average temperature
-
-   Generate downloadable PDF report
-
-✅ Desktop Application (PyQt5)
-
-Modern dashboard UI
-
-CSV file upload
-
-Tabular display of dataset
-
-Bar chart visualization of equipment types
-
-Summary metrics display
-
-One-click PDF report download
-
-✅ Data Visualization
-
-Table view for full dataset
-
-Bar chart for equipment distribution
-
-Clean and readable PDF report
-
-📂 Project Structure
-
-chemical-equipment-visualizer/
-
+```
+stock-predictor-2/
 │
+├── fetch data through coinmarket api
+├── flask deployment
+├── ngrok
+├── plot current price graph
+├── predict using different libraries and algo
+├── prediction from past data 5 mins
+├── public url
+├── sentiment score
+├── signal prediction
+├── README.md
+```
 
-├── backend/
+---
 
-│   ├── backend/
+# 🛠️ Technologies Used
 
-│   │   ├── settings.py
+## Programming & Backend
 
-│   │   ├── urls.py
+* Python
+* Flask
 
-│   │
+## Machine Learning & Data Science
 
-│   ├── api/
+* Scikit-learn
+* Pandas
+* NumPy
 
-│   │   ├── models.py
+## Data Visualization
 
-│   │   ├── views.py
+* Matplotlib
 
-│   │   ├── urls.py
+## NLP & Sentiment Analysis
 
-│   │
+* TextBlob
 
-│   └── manage.py
+## API Integration
 
-│
+* CoinMarketCap API
 
-├── desktop/
+## Deployment & Networking
 
-│   └── main.py
+* ngrok
 
-│
+## Development Tools
 
-├── sample_data.csv
+* Git & GitHub
+* VS Code
 
-├── requirements.txt
+---
 
-└── README.md
+# ⚙️ Key Functionalities
 
-📄 CSV File Format
+## ✔ Real-Time Price Monitoring
 
-The application expects the CSV file in the following format:
+* Live crypto price fetching
+* Dynamic market updates
+* Trend tracking
 
-Equipment Name,Type,Flowrate,Pressure,Temperature
+---
 
-Pump-1,Pump,120,5.2,110
+## ✔ Predictive Analytics
 
-Compressor-1,Compressor,95,8.4,95
+* Future price forecasting
+* Short-term movement prediction
+* Historical pattern analysis
 
-Valve-1,Valve,60,4.1,105
+---
 
-Column Description
+## ✔ Intelligent Signal Generation
 
-Column	Description
+The system generates:
 
-Equipment Name	Name of the equipment
+* Buy Signals
+* Sell Signals
+* Hold Recommendations
 
-Type	Equipment category
+Based on:
 
-Flowrate	Flow rate value
+* Market trends
+* Sentiment analysis
+* Predicted movement probabilities
 
-Pressure	Operating pressure
+---
 
-Temperature	Operating temperature
+## ✔ Sentiment-Driven Analysis
 
-🛠️ Technologies Used
+Combines NLP sentiment scoring with prediction models to simulate market psychology analysis.
 
-Backend
+---
 
-Python 3
+# 📊 Learning Outcomes
 
-Django
+This project demonstrates practical understanding of:
 
-Django REST Framework
+* Financial Market Analytics
+* Machine Learning Model Integration
+* Time-Series Forecasting
+* REST & API Integration
+* Real-Time Data Processing
+* Sentiment Analysis
+* Flask Deployment
+* Public URL Exposure using ngrok
+* Data Visualization Pipelines
 
-Pandas
+---
 
-ReportLab (PDF generation)
+# 🔮 Future Enhancements
 
-Desktop App
+* LSTM & Deep Learning Models
+* Real-Time Trading Bot Integration
+* Portfolio Management Dashboard
+* Advanced Technical Indicators
+* Cloud Deployment on AWS
+* User Authentication System
+* Live News Sentiment Tracking
+* Multi-Crypto Support
+* Automated Trading Execution
 
-PyQt5
+---
 
-Requests
+# 💼 Resume-Ready Highlights
 
-Matplotlib
+* Developed an AI-powered financial prediction platform integrating real-time market APIs, sentiment analysis, and machine learning forecasting models.
+* Implemented predictive analytics and intelligent signal generation for cryptocurrency trend analysis.
+* Built Flask-based deployment architecture with public access using ngrok for live interaction and testing.
+* Designed data visualization workflows for real-time price monitoring and predictive trend comparison.
 
-Tools
+---
 
-Git & GitHub
+# 👨‍💻 Author
 
-VS Code
-
-⚙️ Installation & Setup
-
-1️⃣ Clone the Repository
-
-git clone [https://github.com/parv9999/chemical-equipment-visualizer.git](https://github.com/parv9999/chemical-equipment-visualizer.git)
-
-cd chemical-equipment-visualizer
-
-2️⃣ Backend Setup
-
-cd backend
-
-pip install -r requirements.txt
-
-python manage.py migrate
-
-python manage.py runserver
-
-Backend will run at:
-
-[http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
-3️⃣ Desktop Application Setup
-
-cd desktop
-
-pip install pyqt5 pandas matplotlib requests
-
-python main.py
-
-🔌 API Endpoints
-
-Endpoint	Method	Description
-
-/api/upload/	POST	Upload CSV & get summary
-
-/api/summary/	GET	Recent dataset summaries
-
-/api/report/	GET	Download PDF report
-
-📊 Output Examples
-
-✔ Dashboard Summary
-
-Total Records
-
-Average Flowrate
-
-Average Pressure
-
-Average Temperature
-
-✔ Visualizations
-
-Equipment type bar chart
-
-Data table view
-
-✔ PDF Report
-
-Title & metadata
-
-Equipment summary
-
-Ready for academic submission
-
-🎯 Use Cases
-
-Chemical plant data analysis
-
-Academic project submission (FOSSEE / University)
-
-Learning Django REST APIs
-
-Learning Desktop–Backend integration
-
-Beginner-friendly real-world project
-
-📌 Learning Outcomes
-
-REST API development
-
-CSV data processing
-
-Desktop UI design
-
-Client-server architecture
-
-Git & GitHub workflow
-
-PDF report automation
-
-🔮 Future Enhancements
-
-Authentication & user roles
-
-Advanced charts (line, pie)
-
-Cloud deployment
-
-Database analytics dashboard
-
-Equipment health prediction using ML
-
-👨‍💻 Author
-
-Parv Chauhan
-
+**Parv Chauhan**
 B.Tech Computer Science
-
 VIT Bhopal University
-
-📌 This project was built as part of academic and skill-development work.
